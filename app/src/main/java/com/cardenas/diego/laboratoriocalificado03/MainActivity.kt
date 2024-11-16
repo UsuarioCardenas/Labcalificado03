@@ -14,7 +14,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.cardenas.diego.laboratoriocalificado03.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-
     private lateinit var binding: ActivityMainBinding
     private val teacherAdapter by lazy {
         TeacherAdapter(emptyList(), this::callTeacher, this::emailTeacher)
