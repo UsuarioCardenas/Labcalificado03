@@ -2,7 +2,7 @@ package com.cardenas.diego.laboratoriocalificado03
 
 data class Teacher(
     val name: String,
-    val last_name: String, // Cambié de "surname" a "lastName" para ser más claro
+    val last_name: String,
     val phone: String,
     val email: String,
     val imageUrl: String

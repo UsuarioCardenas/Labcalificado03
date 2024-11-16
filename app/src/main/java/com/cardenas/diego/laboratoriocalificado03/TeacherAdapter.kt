@@ -20,8 +20,8 @@ class TeacherAdapter(
         fun bind(teacher: Teacher) {
             binding.txtName.text = teacher.name
             binding.txtSurname.text = teacher.last_name
-            binding.txtEmail.text = teacher.email  // Asignamos el correo electrónico
-            binding.txtPhone.text = teacher.phone  // Asignamos el teléfono
+            binding.txtEmail.text = teacher.email
+            binding.txtPhone.text = teacher.phone
 
             Glide.with(binding.imgPhoto.context)
                 .load(teacher.imageUrl)
