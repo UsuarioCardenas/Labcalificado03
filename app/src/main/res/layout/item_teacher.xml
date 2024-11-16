@@ -16,7 +16,6 @@
         android:orientation="horizontal"
         android:padding="16dp">
 
-        <!-- Imagen del profesor -->
         <ImageView
             android:id="@+id/imgPhoto"
             android:layout_width="60dp"
@@ -27,7 +26,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
         <!-- Contenedor para los textos -->
         <LinearLayout
             android:layout_width="0dp"
@@ -35,54 +33,31 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <!-- Nombre del profesor con su etiqueta -->
-            <LinearLayout
-                android:orientation="horizontal"
+            <!-- Nombre del profesor -->
+            <TextView
+                android:id="@+id/txtName"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/name_label"
-                    android:textStyle="bold"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/black" />
-                <TextView
-                    android:id="@+id/txtName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Victor Alejandro"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/black" />
-            </LinearLayout>
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/black" />
 
-            <!-- Apellido del profesor con su etiqueta -->
-            <LinearLayout
-                android:orientation="horizontal"
+            <!-- Apellido del profesor -->
+            <TextView
+                android:id="@+id/txtSurname"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/surname_label"
-                    android:textStyle="bold"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/darker_gray" />
-                <TextView
-                    android:id="@+id/txtSurname"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Saico Justo"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/darker_gray" />
-            </LinearLayout>
+                android:layout_height="wrap_content"
+                android:text="Apellido"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray" />
 
             <!-- Correo electrónico del profesor -->
             <TextView
                 android:id="@+id/txtEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/email_label"
+                android:text="Correo electrónico"
                 android:textSize="12sp"
                 android:textColor="@android:color/holo_blue_dark" />
 
@@ -91,7 +66,7 @@
                 android:id="@+id/txtPhone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/phone_label"
+                android:text="Teléfono"
                 android:textSize="12sp"
                 android:textColor="@android:color/holo_green_dark" />
         </LinearLayout>
