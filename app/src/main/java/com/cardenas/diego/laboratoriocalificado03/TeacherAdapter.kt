@@ -17,7 +17,7 @@ class TeacherAdapter(
         fun bind(teacher: Teacher) {
             // Asignamos los datos a los TextViews
             binding.txtName.text = teacher.name
-            binding.txtSurname.text = teacher.lastName
+            binding.txtSurname.text = teacher.last_name
             binding.txtEmail.text = teacher.email  // Asignamos el correo electrónico
             binding.txtPhone.text = teacher.phone  // Asignamos el teléfono
 
